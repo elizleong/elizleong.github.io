@@ -74,25 +74,17 @@ body {
   text-align: center;
   border-collapse: collapse;
   text-decoration: none;
-  color: #fff;
-  margin: 0 10px;
+  padding-left: 18px;
+  padding-right: 18px;
+  /* margin: 0 10px; */
 }
-.boxes .box h3 {
-  transition: all 0.5s;
-  padding-top: 50px;
-  padding-bottom: 60px;
-  margin: 0;
-  font-size: 2em;
-  text-transform: uppercase;
-}
-.boxes .box i {
-  transition: all 0.4s;
-  font-size: 4em;
-}
+
 .boxes .box p {
   transition: all 0.5s;
   margin-top: 70px;
+  overflow-wrap: break-word;
 }
+
 .boxes .box:before {
   transition: all 0.4s;
   position: absolute;
@@ -106,6 +98,7 @@ body {
   border-style: solid;
   border-width: 0 1px;
 }
+
 .boxes .box:after {
   transition: all 0.4s;
   position: absolute;
@@ -119,21 +112,26 @@ body {
   border-style: solid;
   border-width: 1px 0;
 }
+
 .boxes .box:hover {
   color: #4099FF;
 }
+
 .boxes .box:hover h3 {
   padding-top: 80px;
   padding-bottom: 30px;
 }
+
 .boxes .box:hover p {
   margin-top: 30px;
 }
+
 .boxes .box:hover:after {
   width: 100%;
   margin-left: -50%;
   border-color: #5a5a5a;
 }
+
 .boxes .box:hover:before {
   height: 100%;
   top: 0%;
