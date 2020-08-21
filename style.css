@@ -1,0 +1,28 @@
+body {
+  background-color:#FFFFFF;
+  font-family: Lato;  
+  grid-template-columns: 1fr 1fr 1fr;
+  margin:0 auto; 
+}
+
+.scope-one {
+  font-family: 'Scope One', serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.lato {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: thin;
+}
+
+.socials {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  margin: 10px !important; 
+  margin-left: 20px !important; 
+  text-align: left;
+}
+
