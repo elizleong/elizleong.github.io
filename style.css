@@ -24,8 +24,8 @@ body {
   font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: bold;
-  margin: 10px !important; 
-  margin-left: 20px !important; 
+  margin: 10px; 
+  margin-left: 20px ; 
   text-align: left;
 }
 
@@ -59,12 +59,14 @@ body {
   transition: all 0.4s;
 }
 
+/* Box Construction */
 .boxes {
   text-align: center;
   position: relative;
   width: 100%;
   margin: 0 auto;
 }
+
 .boxes .box {
   display: block;
   float: left;
@@ -74,17 +76,18 @@ body {
   text-align: center;
   border-collapse: collapse;
   text-decoration: none;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 8%;
+  padding-right: 8%;
   /* margin: 0 10px; */
 }
 
 .boxes .box p {
   transition: all 0.5s;
-  margin-top: 70px;
+  margin-top: 10px;
   overflow-wrap: break-word;
 }
 
+/* Box Animation */
 .boxes .box:before {
   transition: all 0.4s;
   position: absolute;
@@ -115,11 +118,6 @@ body {
 
 .boxes .box:hover {
   color: #4099FF;
-}
-
-.boxes .box:hover h3 {
-  padding-top: 80px;
-  padding-bottom: 30px;
 }
 
 .boxes .box:hover p {
