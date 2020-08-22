@@ -27,11 +27,20 @@ body {
   margin: 10px; 
   margin-left: 20px ; 
   text-align: left;
-  color: #0E79B2;
+  color: #078fe6;
 }
 
 .section-header {
   color: #f4bf08;
+}
+
+/* Profile Picture */
+.headshot {
+  display: block;
+  border-radius: 200px;
+  box-sizing: border-box;
+  background-color: #DDD;
+  border: 5px solid #f4bf08;
 }
 
 /* Box Text*/
