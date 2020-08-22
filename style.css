@@ -27,18 +27,23 @@ body {
   margin: 10px; 
   margin-left: 20px ; 
   text-align: left;
+  color: #0E79B2;
+}
+
+.section-header {
+  color: #f4bf08;
 }
 
 /* Box Text*/
 .job-title {
-  /* color: #fff; */
+  /* color: #001d33; */
   font-weight: bold;
   transition: all 0.5s;
   /* text-align: left; */
 } 
 
 .hashtag {
-  /* color: #fff; */
+  /* color: #005495; */
   font-weight: thin;
   /* text-align: left; */
 } 
@@ -46,6 +51,13 @@ body {
 /* Images Inside Box Size */
 .boxes .box-img-large {
   width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: all 0.4s;
+}
+
+.boxes .box-img-bigmed {
+  width: 70%;
   height: auto;
   object-fit: cover;
   transition: all 0.4s;
@@ -61,6 +73,12 @@ body {
   width: 23.5%;
   height: auto;
   transition: all 0.4s;
+}
+
+.boxes .box i {
+  transition: all 0.4s;
+  font-size: 4em;
+  width: 100%;
 }
 
 /* Box Construction */
@@ -120,24 +138,21 @@ body {
   border-width: 1px 0;
 }
 
-.boxes .box:hover {
-  color: #4099FF;
-}
-
 .boxes .box:hover p {
   margin-top: 30px;
+  color: #ffffff !important;
 }
 
 .boxes .box:hover:after {
   width: 100%;
   margin-left: -50%;
-  border-color: #5a5a5a;
+  border-color: #000;
 }
 
 .boxes .box:hover:before {
   height: 100%;
   top: 0%;
-  border-color: #5a5a5a;
+  border-color: #000;
 }
 
 /* Button Construction */
