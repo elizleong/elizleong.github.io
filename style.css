@@ -164,6 +164,182 @@ body {
   border-color: #000;
 }
 
+/* Word Carousel */
+.word-carousel {
+  /* font-size: 36px;
+  font-weight: 100; */
+  /* color: #939393; */
+}
+
+.word-carousel div {
+  overflow: hidden;
+  /* allows the child div to be bigger than the parent */
+  position: absolute;
+  /* the height of the div */
+  height: 50px;
+  /* text position In the div */
+  padding-top: 30px;
+  /* negative values: left and positive values: right */
+  margin-left: -35px;
+  /* text position FROM the other components */
+  /* margin-top: -30px; */
+  margin-bottom: 0px;
+  display: inline-block;
+  /* list-style-type: none; */
+}
+
+/* This version works but the 'g' gets cut off */
+/* .word-carousel div {
+  overflow: hidden;
+  position: relative; */
+  /* the height of the div */
+  /* height: 35px; */
+  /* text position In the div */
+  /* padding-top: 32px;
+  margin-left: -47px; */
+  /* text position FROM the other components */
+  /* margin-top: -30px; */
+  /* margin-bottom: 0px;
+  display: inline-block; */
+  /* list-style-type: none; */
+/* } */
+
+.word-carousel div li {
+  /* font-family: Serif; */
+  /* color: #ccc; */
+  /* font-weight: 700; */
+  padding: 0 10px;
+  height: 45px;
+  margin-bottom: 45px;
+  /* display: block; */
+  list-style-type: none;
+}
+
+.flip2 {
+  animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+.flip3 {
+  animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+.flip4 {
+  animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+@keyframes flip2 {
+  0% {
+      margin-top: -180px;
+  }
+  5% {
+      margin-top: -90px;
+  }
+  50% {
+      margin-top: -90px;
+  }
+  55% {
+      margin-top: 0px;
+  }
+  99.99% {
+      margin-top: 0px;
+  }
+  100% {
+      margin-top: -270px;
+  }
+}
+
+@keyframes flip3 {
+  0% {
+      margin-top: -270px;
+  }
+  5% {
+      margin-top: -180px;
+  }
+  33% {
+      margin-top: -180px;
+  }
+  38% {
+      margin-top: -90px;
+  }
+  66% {
+      margin-top: -90px;
+  }
+  71% {
+      margin-top: 0px;
+  }
+  99.99% {
+      margin-top: 0px;
+  }
+  100% {
+      margin-top: -270px;
+  }
+}
+
+@keyframes flip4 {
+  0% {
+      margin-top: -390px;
+  }
+  5% {
+      margin-top: -300px;
+  }
+  25% {
+      margin-top: -300px;
+  }
+  30% {
+      margin-top: -210px;
+  }
+  50% {
+      margin-top: -210px;
+  }
+  55% {
+      margin-top: -120px;
+  }
+  75% {
+      margin-top: -120px;
+  }
+  80% {
+      margin-top: -30px;
+  }
+  99.99% {
+      margin-top: -30px;
+  }
+  100% {
+      margin-top: -210px;
+  }
+}
+
+/* original 4 flip animation */
+/* @keyframes flip4 {
+  0% {
+      margin-top: -360px;
+  }
+  5% {
+      margin-top: -270px;
+  }
+  25% {
+      margin-top: -270px;
+  }
+  30% {
+      margin-top: -180px;
+  }
+  50% {
+      margin-top: -180px;
+  }
+  55% {
+      margin-top: -90px;
+  }
+  75% {
+      margin-top: -90px;
+  }
+  80% {
+      margin-top: 0px;
+  }
+  99.99% {
+      margin-top: 0px;
+  }
+  100% {
+      margin-top: -270px;
+  }
+} */
+
 /* Button Construction */
 .btn {
 	border: none;
